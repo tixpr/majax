@@ -266,8 +266,6 @@ var Majax = function () {
 						break;
 				}
 			}
-			var h = __host_api || '';
-			url = h + url;
 			this.request_fncs = fncs;
 			this.request_type = 'GET';
 			this.request_url = url;
@@ -296,8 +294,6 @@ var Majax = function () {
 			this.request_type = 'POST';
 			this.request_url = url;
 			this.request_data = data;
-			var h = __host_api || '';
-			url = h + url;
 			var __body = null;
 			this.header.set('X-Requested-With', 'XMLHttpRequest');
 			if (data) {
@@ -348,7 +344,6 @@ var Majax = function () {
 			this.request_url = url;
 			this.request_data = data;
 			var h = __host_api || '';
-			url = h + url;
 			var __body = null;
 			this.header.set('X-Requested-With', 'XMLHttpRequest');
 			if (data) {
@@ -396,8 +391,6 @@ var Majax = function () {
 			this.request_type = 'DELETE';
 			this.request_url = url;
 			this.request_data = data;
-			var h = __host_api || '';
-			url = h + url;
 			fetch(url, {
 				method: 'DELETE',
 				headers: this.header,

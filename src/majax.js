@@ -167,8 +167,6 @@ export default class Majax{
 					break;
 			}
 		}
-		let h = __host_api||'';
-		url = h+url;
 		this.request_fncs = fncs;
 		this.request_type = 'GET';
 		this.request_url = url;
@@ -194,8 +192,6 @@ export default class Majax{
 		this.request_type = 'POST';
 		this.request_url = url;
 		this.request_data = data;
-		let h = __host_api||'';
-		url = h+url;
 		let __body=null;
 		this.header.set('X-Requested-With', 'XMLHttpRequest');
 		if(data){
@@ -243,7 +239,6 @@ export default class Majax{
 		this.request_url = url;
 		this.request_data = data;
 		let h = __host_api||'';
-		url = h+url;
 		let __body=null;
 		this.header.set('X-Requested-With', 'XMLHttpRequest');
 		if(data){
@@ -290,8 +285,6 @@ export default class Majax{
 		this.request_type = 'DELETE';
 		this.request_url = url;
 		this.request_data = data;
-		let h = __host_api||'';
-		url = h+url;
 		fetch(
 			url,
 			{

@@ -1,4 +1,4 @@
-export default class Majax{
+class Majax{
 	static setConfig(client_id, client_secret,host_api){
 		localStorage.setItem('credentials',JSON.stringify({
 			client_id: client_id,
